@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f7fb;
+  color: #1d2b36;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.encabezado {
+  background-color: #073b63;
+  color: #ffffff;
+  border-bottom: 0.25rem solid #4aa3d8;
+}
+
+.barra-superior {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.2rem 0;
+}
+
+.marca h1 {
+  font-size: 1.8rem;
+}
+
+.marca p {
+  color: #d7e8f5;
+  font-size: 0.95rem;
+}
+
+.navegacion ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.navegacion a {
+  display: block;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #6fb3dc;
+  border-radius: 0.4rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navegacion a:hover,
+.navegacion a.activo {
+  background-color: #ffffff;
+  color: #073b63;
+}
+
+.hero {
+  background-color: #dcecf6;
+  border-bottom: 1px solid #c8d9e4;
+}
+
+.hero-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 3rem 0;
+}
+
+.hero h2 {
+  max-width: 42rem;
+  margin-bottom: 1rem;
+  color: #073b63;
+  font-size: 2rem;
+}
+
+.hero p {
+  max-width: 42rem;
+}
+
+.etiqueta {
+  margin-bottom: 0.5rem;
+  color: #366f96;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.seccion {
+  padding: 2.5rem 0;
+}
+
+.seccion h2 {
+  margin-bottom: 1rem;
+  color: #073b63;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid #c8d9e4;
+  background-color: #ffffff;
+}
+
+.formulario input,
+.formulario select,
+.formulario button {
+  padding: 0.75rem;
+  border: 1px solid #9eb8ca;
+  border-radius: 0.35rem;
+  font: inherit;
+}
+
+.formulario button {
+  background-color: #073b63;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.resultado,
+.tarjeta {
+  padding: 1rem;
+  border: 1px solid #c8d9e4;
+  background-color: #ffffff;
+}
+
+.tarjeta h3 {
+  margin-bottom: 0.5rem;
+  color: #073b63;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.35rem;
+  background-color: #073b63;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.boton:hover {
+  background-color: #0b568d;
+}
+
+.grilla-tarjetas {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.contenedor-mapa {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #9eb8ca;
+  border-radius: 0.4rem;
+  background-color: #ffffff;
+}
+
+.imagen-mapa {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #c8d9e4;
+  border-radius: 0.35rem;
+  background-color: #eaf4fa;
+}
+
+.leyenda-mapa {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.item-leyenda {
+  padding: 1rem;
+  border: 1px solid #c8d9e4;
+  background-color: #ffffff;
+}
+
+.item-leyenda h3 {
+  margin-bottom: 0.5rem;
+  color: #073b63;
+}
+
+.acceso {
+  border-left: 0.4rem solid #1f6f9f;
+}
+
+.servicios {
+  border-left: 0.4rem solid #4aa3d8;
+}
+
+.operacion {
+  border-left: 0.4rem solid #6b7785;
+}
+
+.descanso {
+  border-left: 0.4rem solid #2c8c7c;
+}
+
+.estacionamiento {
+  border-left: 0.4rem solid #073b63;
+}
+
+.referencia-sectores {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.pie {
+  padding: 1.2rem 0;
+  background-color: #1d2b36;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .barra-superior {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navegacion ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .grilla-tarjetas {
+    flex-direction: row;
+  }
+
+  .leyenda-mapa {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .item-leyenda {
+    flex: 1 1 16%;
+  }
+
+  .referencia-sectores {
+    flex-direction: row;
+  }
+
+  .referencia-sectores .tarjeta {
+    flex: 1;
+  }
+
+  .tarjeta {
+    flex: 1;
+  }
+}
