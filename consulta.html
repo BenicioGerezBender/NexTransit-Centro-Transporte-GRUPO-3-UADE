@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexTransit - Consulta de Viajes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="contenedor barra-superior">
+            <div class="marca">
+                <h1>NexTransit</h1>
+                <p>Central de transportes terrestre para conductores de camiones</p>
+            </div>
+
+            <nav class="navegacion">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a class="activo" href="consulta.html">Consulta de viajes</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="mapahtml">Mapa</a></li>
+                    <li><a href="index.html#transportes">Transportes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contenedor seccion">
+            <h2>Consulta de recorridos</h2>
+            <p>
+                Esta sección permite consultar recorridos simulados coordinados desde
+                NexTransit. El sistema indica qué transporte integrado opera el servicio,
+                qué sector de la central debe utilizar, el tiempo estimado de viaje, el
+                costo aproximado y una recomendación para el conductor.
+            </p>
+
+            <form class="formulario" id="formularioConsulta">
+                <label for="destino"> Destino o recorrido</label>
+                <select id="destino" name="destino" required>
+                    <option value="">Seleccionar una opción</option>
+                    <option value="Neuquén">Neuquén</option>
+                    <option value="Cipolletti">Cipolletti</option>
+                    <option value="General Roca">General Roca</option>
+                    <option value="Añelo">Añelo</option>
+                    <option value="Bahía Blanca">Bahía Blanca</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Rosario">Rosario</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Mar del Plata">Mar del Plata</option>
+                </select>
+
+                <label for="servicio">Tipo de servicio</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="">Seleccionar una opción</option>
+                    <option value="descanso">Descanso y estacionamiento</option>
+                    <option value="carga">Traslado de carga</option>
+                    <option value="soporte">Soporte en ruta</option>
+                </select>
+
+                <button type="submit">Consultar</button>
+            </form>
+
+            <article class="resultado" id="resultadoConsulta">
+                <h3>Resultado de la consulta</h3>
+                <p>Completa el formulario para ver una respuesta inicial.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor">
+            <p>NexTransit - Actividad 3 | Diseño y Desarrolla WEB</p>
+        </div>
+    </footer>
+
+    <script src="viajes.js"></script>
+</body>
+</html>
