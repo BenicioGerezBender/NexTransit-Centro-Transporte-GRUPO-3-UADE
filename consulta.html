@@ -1,80 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexTransit - Consulta de Viajes</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexTransit | Consulta de Viajes</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header class="encabezado">
-        <div class="contenedor barra-superior">
-            <div class="marca">
-                <h1>NexTransit</h1>
-                <p>Central de transportes terrestre para conductores de camiones</p>
-            </div>
+  <header class="encabezado">
+    <div class="contenedor barra-superior">
+      <div class="marca">
+        <h1>NexTransit</h1>
+        <p>Central de transporte terrestre para conductores de camiones</p>
+      </div>
 
-            <nav class="navegacion">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a class="activo" href="consulta.html">Consulta de viajes</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="mapahtml">Mapa</a></li>
-                    <li><a href="index.html#transportes">Transportes</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+      <nav class="navegacion">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a class="activo" href="consulta.html">Consulta de viajes</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="mapa.html">Mapa</a></li>
+          <li><a href="index.html#transportes">Transportes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <section class="contenedor seccion">
-            <h2>Consulta de recorridos</h2>
-            <p>
-                Esta sección permite consultar recorridos simulados coordinados desde
-                NexTransit. El sistema indica qué transporte integrado opera el servicio,
-                qué sector de la central debe utilizar, el tiempo estimado de viaje, el
-                costo aproximado y una recomendación para el conductor.
-            </p>
+  <main>
+    <section class="contenedor seccion">
+      <h2>Consulta para choferes</h2>
+      <p>
+        Seleccioná tu destino y tipo de servicio para conocer el transporte
+        integrado asignado, dársena o sector, tiempo estimado, costo aproximado
+        y recomendación operativa.
+      </p>
 
-            <form class="formulario" id="formularioConsulta">
-                <label for="destino"> Destino o recorrido</label>
-                <select id="destino" name="destino" required>
-                    <option value="">Seleccionar una opción</option>
-                    <option value="Neuquén">Neuquén</option>
-                    <option value="Cipolletti">Cipolletti</option>
-                    <option value="General Roca">General Roca</option>
-                    <option value="Añelo">Añelo</option>
-                    <option value="Bahía Blanca">Bahía Blanca</option>
-                    <option value="Córdoba">Córdoba</option>
-                    <option value="Rosario">Rosario</option>
-                    <option value="Mendoza">Mendoza</option>
-                    <option value="Mar del Plata">Mar del Plata</option>
-                </select>
+      <form class="formulario" id="formularioConsulta">
+        <label for="destino">¿A dónde tenés que ir?</label>
+        <select id="destino" name="destino" required>
+          <option value="">Seleccionar una opción</option>
+          <option value="Neuquén">Neuquén</option>
+          <option value="Cipolletti">Cipolletti</option>
+          <option value="General Roca">General Roca</option>
+          <option value="Añelo">Añelo</option>
+          <option value="Bahía Blanca">Bahía Blanca</option>
+          <option value="CABA">CABA</option>
+          <option value="Pilar">Pilar</option>
+          <option value="Quilmes">Quilmes</option>
+          <option value="Gral. San Martín">Gral. San Martín</option>
+          <option value="Interior del país">Interior del país</option>
+          <option value="Rosario">Rosario</option>
+          <option value="Córdoba">Córdoba</option>
+          <option value="Mendoza">Mendoza</option>
+          <option value="Tucumán">Tucumán</option>
+        </select>
 
-                <label for="servicio">Tipo de servicio</label>
-                <select id="servicio" name="servicio" required>
-                    <option value="">Seleccionar una opción</option>
-                    <option value="descanso">Descanso y estacionamiento</option>
-                    <option value="carga">Traslado de carga</option>
-                    <option value="soporte">Soporte en ruta</option>
-                </select>
+        <label for="servicio">¿Qué operación vas a realizar?</label>
+        <select id="servicio" name="servicio" required>
+          <option value="">Seleccionar una opción</option>
+          <option value="descanso">Descanso y estacionamiento</option>
+          <option value="carga">Traslado de carga</option>
+          <option value="soporte">Soporte en ruta</option>
+        </select>
 
-                <button type="submit">Consultar</button>
-            </form>
+        <button type="submit">Consultar mi viaje</button>
+      </form>
 
-            <article class="resultado" id="resultadoConsulta">
-                <h3>Resultado de la consulta</h3>
-                <p>Completa el formulario para ver una respuesta inicial.</p>
-            </article>
-        </section>
-    </main>
+      <article class="resultado resultado-operativo" id="resultadoConsulta">
+        <h3>Instrucciones para tu viaje</h3>
+        <p>Seleccioná tu destino y tipo de servicio para recibir instrucciones operativas antes de salir a ruta.</p>
+      </article>
+    </section>
 
-    <footer class="pie">
-        <div class="contenedor">
-            <p>NexTransit - Actividad 3 | Diseño y Desarrolla WEB</p>
-        </div>
-    </footer>
+    <section class="contenedor seccion">
+      <h2>Mapa del recorrido</h2>
+      <p>Visualizá el recorrido asignado desde NexTransit hacia el destino seleccionado.</p>
 
-    <script src="viajes.js"></script>
+      <div class="contenedor-mapa-consulta">
+        <div id="mapaConsulta"></div>
+      </div>
+
+      <article class="detalle-recorrido-mapa" id="detalleMapaConsulta">
+        <p>Seleccioná un destino y tipo de servicio para visualizar el recorrido.</p>
+      </article>
+    </section>
+
+    <section class="contenedor seccion" id="monitoreo-camiones">
+      <h2>Mapa operativo de camiones</h2>
+      <p>Visualizá unidades simuladas que operan desde NexTransit hacia distintos destinos.</p>
+
+      <div class="contenedor-mapa-operativo">
+        <div id="mapaOperativoCamiones"></div>
+      </div>
+
+      <div class="panel-camiones" id="panelCamiones"></div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p>NexTransit - Actividad 3 | Diseño y Desarrollo Web</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/mapa-consulta.js"></script>
+  <script src="js/monitoreo-camiones.js"></script>
+  <script src="js/viajes.js"></script>
 </body>
 </html>
