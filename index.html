@@ -1,113 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexTransit - Inicio</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexTransit | Inicio</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header class="encabezado">
-        <div class="contenedor barra-superior">
-            <div class="marca">
-                <h1>NexTransit</h1>
-                <p>Central de transporte terreste para conductores de camiones</p>
-            </div>
+  <header class="encabezado">
+    <div class="contenedor barra-superior">
+      <div class="marca">
+        <h1>NexTransit</h1>
+        <p>Central de transporte terrestre para conductores de camiones</p>
+      </div>
 
-            <nav class="navegacion">
-                <ul>
-                    <li><a class="activo" href="index.html">Inicio</a></li>
-                    <li><a href="consulta.html">Consulta de viajes</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="mapa.html">Mapa</a></li>
-                    <li><a href="index.html#transportes">Transportes</a></li>
-                </ul>
-            </nav>
+      <nav class="navegacion">
+        <ul>
+          <li><a class="activo" href="index.html">Inicio</a></li>
+          <li><a href="consulta.html">Consulta de viajes</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="mapa.html">Mapa</a></li>
+          <li><a href="index.html#transportes">Transportes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="contenedor hero-contenido">
+        <p class="etiqueta">CABA | Camiones | Transporte de cargas</p>
+        <h2>NexTransit para choferes</h2>
+        <p>
+          Consultá tu ingreso, dársena, recorrido, servicios disponibles y
+          salida a ruta desde una sola herramienta pensada para usar desde el
+          celular.
+        </p>
+
+        <div class="acciones-hero">
+          <a class="boton boton-destacado" href="#info-chofer">Información para chofer</a>
+          <a class="boton" href="consulta.html">Consultar recorrido</a>
+          <a class="boton boton-secundario" href="mapa.html">Mapa rápido</a>
+          <a class="boton boton-secundario" href="servicios.html">Servicios disponibles</a>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
-        <section class="hero">
-            <div class="contenedor hero-contenido">
-                <p class="etiqueta">CABA | Camiones | Transporte de cargas</p>
-                <h2>Un punto de descanso, servicios y apoyo para coonductores en ruta</h2>
-                <p>
-                    NexTransit es una central pensada para choferes de camiones, con
-                    estacionamiento, amenities, información útil de recorridos y operación
-                    de transportes integrados.
-                </p>
-            </div>
-        </section>
+    <section class="contenedor seccion">
+      <h2>Sobre NexTransit</h2>
+      <p>
+        NexTransit es una central de transporte terrestre ubicada en CABA,
+        orientada a conductores de camiones y empresas de transporte. La central
+        recibe unidades de Ruta Sur, TransRuta y López Logística, ofreciendo
+        descanso, estacionamiento, amenities, carga, descarga y coordinación de
+        recorridos. El espacio funciona como punto de apoyo para choferes y como
+        base operativa con dársenas, plataformas, patio de maniobras y sectores
+        de carga.
+      </p>
+    </section>
 
-        <section class="contenedor seccion">
-            <h2>Sobre NexTransit</h2>
-            <p>
-                NexTransit es una central de transporte terreste ubicada en CABA,
-                orietada a conductores de camiones y empresas de transportes. La central
-                recibe unidades de Ruta Sur, TransService y López Logística, ofreciendo
-                descanso, estacionamiento, amenities, carga, descarga y coordinación de
-                recorridos. El espacio funciona como punto de apoyo para choferes y como
-                base operativa con dársenas, plataformas, patio de maniobras y sectores
-                de carga.
-            </p>
-        </section>
+    <section class="contenedor seccion">
+      <h2>Acciones rápidas del chofer</h2>
+      <div class="grilla-tarjetas">
+        <article class="tarjeta">
+          <h3>Consulta de recorrido</h3>
+          <p>Ver transporte integrado, dársena, tiempo, costo y recomendación operativa.</p>
+          <a class="boton" href="consulta.html">Ir a consulta</a>
+        </article>
 
-        <section class="contenedor seccion">
-            <h2>Accesos rápidos</h2>
-            <div class="grilla-tarjetas">
-                <article class="tarjeta">
-                    <h3>Consulta de viajes</h3>
-                    <p>Consultar recorridos, sectores y recomendaciones para conductore.</p>
-                    <a class="boton" href="consulta.html">Ir a consulta</a>
-                </article>
+        <article class="tarjeta">
+          <h3>Servicios disponibles</h3>
+          <p>Encontrar baños, duchas, descanso, gastronomía, información y estacionamiento.</p>
+          <a class="boton" href="servicios.html">Ver servicios</a>
+        </article>
 
-                <article class="tarjeta">
-                    <h3>Servicios</h3>
-                    <p>Ver servicios de descanso, higiene, gastronomía y estacionamiento.</p>
-                    <a class="boton" href="servicios.html">Cer servicios</a>
-                </article>
+        <article class="tarjeta">
+          <h3>Mapa rápido</h3>
+          <p>Entender por dónde ingresar, dónde esperar, dónde cargar y cómo salir.</p>
+          <a class="boton" href="mapa.html">Ver mapa</a>
+        </article>
+      </div>
+    </section>
 
-                <article class="tarjeta">
-                    <h3>Mapa</h3>
-                    <p>Ubicar accesos, dársenas, playas de estacionamiento y sectores.</p>
-                    <a class="boton" href="mapa.html">Ver mapa</a>
-                </article>
-            </div>
-        </section>
+    <section class="contenedor seccion info-chofer" id="info-chofer">
+      <h2>Información principal para choferes</h2>
+      <p>
+        Guía rápida para ingresar a NexTransit, ubicarse dentro de la central,
+        usar servicios, consultar el recorrido y salir hacia ruta.
+      </p>
 
-        <section class="contenedor seccion" id="transportes">
-            <h2>Transportes integrados</h2>
-            <p>
-                NexTransit integra empresas de transprote que utilizan la central como
-                punto de llegada, descanso, carga, descarta y coordinación de recorridos.
-            </p>
+      <div class="grilla-choferes">
+        <article class="tarjeta-chofer">
+          <h3>Ingreso a la central</h3>
+          <p>Ingresá por el acceso principal para realizar el control inicial y recibir derivación.</p>
+        </article>
 
-            <div class="grilla-tarjetas">
-                <article class="tarjeta">
-                    <h3>Ruta Sur</h3>
-                    <p>Empresa de tranporte terreste orientada a cargas industriales, comerciales y regionales dentro del sur argentino.</p>
-                    <a class="boton" href="https://beniciogerezbender.github.io/RutaSur-Bencio-Gerez-Bender/" target="_blank" rel="noopener noreferrer">Visitar sitio</a>
-                </article>
+        <article class="tarjeta-chofer">
+          <h3>Documentación</h3>
+          <p>Tené disponible documentación del vehículo, carga asignada, transporte y destino.</p>
+        </article>
 
-                <article class="tarjeta">
-                    <h3>TransService</h3>
-                    <p>Servicio de transporte de carga nacional para empresas, con seguimiento operativo y cobertura en distintas provincias.</p>
-                    <a class="boton" href="https://ricardolora1.github.io/Logistica/" target="_blank" rel="noopener noreferrer">Visitar sitio</a>
-                </article>
+        <article class="tarjeta-chofer">
+          <h3>Estacionamiento</h3>
+          <p>Si tenés espera previa, usá la playa principal de estacionamiento para camiones.</p>
+        </article>
 
-                <article class="tarjeta">
-                    <h3>López Logística</h3>
-                    <p>Empresa de transporte de carga por carretera, orientada a carga seca, refrigerada y peligrosa.</p>
-                    <a class="boton" href="https://lopezzz099.github.io/TransporteLopez/index.html" target="_blank" rel="noopener noreferrer">Visitar sitio</a>
-                </article>
-            </div>
-        </section>
-    </main>
+        <article class="tarjeta-chofer">
+          <h3>Servicios</h3>
+          <p>Baños, duchas, gastronomía y área de descanso están disponibles dentro de la central.</p>
+        </article>
 
-    <footer class="pie">
-        <div class="contenedor">
-            <p>NexTransit - Actividad 3 | Diseño y Desarrollo WEB</p>
-        </div>
-    </footer>
+        <article class="tarjeta-chofer">
+          <h3>Dársena asignada</h3>
+          <p>Consultá tu recorrido para conocer la dársena, plataforma o sector correspondiente.</p>
+        </article>
+
+        <article class="tarjeta-chofer">
+          <h3>Salida a ruta</h3>
+          <p>Antes de salir, verificá recorrido, documentación y recomendación operativa.</p>
+        </article>
+      </div>
+
+      <div class="acciones-chofer">
+        <a class="boton" href="consulta.html">Consultar recorrido</a>
+        <a class="boton boton-secundario" href="mapa.html">Ver mapa de la central</a>
+      </div>
+    </section>
+
+    <section class="contenedor seccion" id="estado-central">
+      <h2>Estado actual de la central</h2>
+      <p>
+        Información útil para conductores antes de ingresar, descansar o salir
+        a ruta desde NexTransit.
+      </p>
+
+      <div class="grilla-condiciones">
+        <article class="tarjeta-condicion" id="condicionesActuales">
+          <h3>Condiciones actuales</h3>
+          <p class="estado-cargando">Cargando condiciones actuales...</p>
+        </article>
+
+        <article class="tarjeta-condicion" id="calidadAmbiental">
+          <h3>Calidad ambiental</h3>
+          <p class="estado-cargando">Cargando calidad ambiental...</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contenedor seccion informacion-general" id="transportes">
+      <h2>Información para empresas y usuarios</h2>
+      <p>
+        NexTransit también permite a empresas y usuarios consultar transportes
+        integrados, servicios disponibles, recorridos simulados y sectores
+        operativos de la central.
+      </p>
+
+      <div class="grilla-tarjetas">
+        <article class="tarjeta">
+          <h3>Ruta Sur</h3>
+          <p>Transporte integrado especializado en cargas industriales, comerciales y regionales hacia el sur argentino.</p>
+          <p><strong>Destinos:</strong> Neuquén, Cipolletti, General Roca, Añelo y Bahía Blanca.</p>
+          <p><strong>Operación:</strong> Opera desde dársenas asignadas dentro de NexTransit.</p>
+          <a class="boton" href="https://beniciogerezbender.github.io/RutaSur-Bencio-Gerez-Bender/" target="_blank" rel="noopener noreferrer">Visitar sitio</a>
+        </article>
+
+        <article class="tarjeta">
+          <h3>TransRuta</h3>
+          <p>Transporte integrado orientado a carga nacional, distribución urbana y seguimiento operativo, con cobertura en CABA, GBA y coordinación hacia el interior del país.</p>
+          <p><strong>Servicios:</strong> carga general, refrigerada, pesada, distribución urbana y logística integral.</p>
+          <p><strong>Operación:</strong> Opera desde plataformas asignadas dentro de NexTransit.</p>
+          <a class="boton" href="https://ricardolora1.github.io/Logistica/" target="_blank" rel="noopener noreferrer">Visitar sitio</a>
+        </article>
+
+        <article class="tarjeta">
+          <h3>López Logística</h3>
+          <p>Transporte integrado especializado en carga seca, refrigerada y materiales peligrosos, con operación nacional y seguimiento de unidades.</p>
+          <p><strong>Destinos principales:</strong> Rosario, Córdoba, Mendoza y Tucumán.</p>
+          <p><strong>Operación:</strong> Opera desde sectores de carga seca, refrigerada o controlada dentro de NexTransit.</p>
+          <a class="boton" href="https://lopezzz099.github.io/TransporteLopez/index.html" target="_blank" rel="noopener noreferrer">Visitar sitio</a>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Servicios de la central</h3>
+          <p>Información sobre higiene, descanso, gastronomía, estacionamiento y soporte operativo.</p>
+          <a class="boton" href="servicios.html">Ver servicios</a>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Mapa completo</h3>
+          <p>Referencia general de accesos, dársenas, sectores, estacionamiento y áreas de servicio.</p>
+          <a class="boton" href="mapa.html">Ver mapa completo</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p>NexTransit - Actividad 3 | Diseño y Desarrollo Web</p>
+    </div>
+  </footer>
+
+  <script src="js/condiciones.js"></script>
 </body>
 </html>
