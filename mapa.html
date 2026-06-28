@@ -1,100 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexTransit - Mapa</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexTransit | Mapa</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header class="encabezado">
-        <div class="contenedor barra-superior">
-            <div class="marca">
-                <h1>NexTransit</h1>
-                <p>Central de transporte terrestre para conductores de camiones<p>
-            </div>
+  <header class="encabezado">
+    <div class="contenedor barra-superior">
+      <div class="marca">
+        <h1>NexTransit</h1>
+        <p>Central de transporte terrestre para conductores de camiones</p>
+      </div>
 
-            <nav class="navegacion">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="consulta.html">Consulta de viajes</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a class="activo" href="mapa.html">Mapa</a></li>
-                    <li><a href="index.html#transportes">Transportes</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+      <nav class="navegacion">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="consulta.html">Consulta de viajes</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a class="activo" href="mapa.html">Mapa</a></li>
+          <li><a href="index.html#transportes">Transportes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <section class="contenedor seccion">
-            <h2>Mapa de la central</h2>
-            <p>
-                El siguiente plano isula representa la distribución física de NexTransit,
-                donde los camiones ingrresan, estacionan, descansan, cargan, descargan y
-                salen hacia rutas principales.
-            </p>
+  <main>
+    <section class="contenedor seccion mapa-rapido">
+      <h2>Mapa rápido para choferes</h2>
+      <p>
+        Para facilitar la lectura desde el celular, la central se resume en
+        zonas principales según el recorrido habitual del conductor.
+      </p>
 
-            <div class="contenedor-mapa">
-                <img class="imagen-mapa" src="img/mapa-central-nextransit.png" alt="Plano visual de NexTransit con acceso principal, salida a rutas, estacionamiento para camiones, dársenas, plataformas de carga, servicios, área de descanso y sector logístico complementario">
-            </div>
-        </section>
+      <div class="pasos-mapa">
+        <article class="paso-mapa">
+          <span class="numero-paso">1</span>
+          <div>
+            <p class="etiqueta-paso">Acceso</p>
+            <h3>Ingreso y control</h3>
+            <p>Ingresá por el acceso principal. Allí se realiza el control inicial y la derivación hacia estacionamiento, servicios o dársenas.</p>
+          </div>
+        </article>
 
-        <section class="contenedor seccion">
-            <h2>Leyenda del mapa</h2>
-            <div class="leyenda-mapa">
-                <article class="item-leyenda acceso">
-                    <h3>Accesos</h3>
-                    <p>Entradas, salidas y conexiones con rutas.</p>
-                </article>
+        <article class="paso-mapa">
+          <span class="numero-paso">2</span>
+          <div>
+            <p class="etiqueta-paso">Información</p>
+            <h3>Oficina de información</h3>
+            <p>Consultá sector asignado, dársena, documentación y estado del recorrido.</p>
+          </div>
+        </article>
 
-                <article class="item-leyenda servicios">
-                    <h3>Servicios</h3>
-                    <p>Baños, duchas, información y gastronomía.</p>
-                </article>
+        <article class="paso-mapa">
+          <span class="numero-paso">3</span>
+          <div>
+            <p class="etiqueta-paso">Espera</p>
+            <h3>Estacionamiento</h3>
+            <p>Si tenés espera previa, dirigite a la playa de estacionamiento para camiones.</p>
+          </div>
+        </article>
 
-                <article class="item-leyenda operacion">
-                    <h3>Operación</h3>
-                    <p>Dársenas, plataformas, logística y maniobras.</p>
-                </article>
+        <article class="paso-mapa">
+          <span class="numero-paso">4</span>
+          <div>
+            <p class="etiqueta-paso">Servicios</p>
+            <h3>Servicios del chofer</h3>
+            <p>Baños, duchas, locales gastronómicos y área de descanso se encuentran agrupados cerca del sector central.</p>
+          </div>
+        </article>
 
-                <article class="item-leyenda descanso">
-                    <h3>Descanso</h3>
-                    <p>Áreas de pausa y espera para conductores.</p>
-                </article>
+        <article class="paso-mapa">
+          <span class="numero-paso">5</span>
+          <div>
+            <p class="etiqueta-paso">Operación</p>
+            <h3>Dársenas y carga</h3>
+            <p>Las dársenas 1 a 5 y las plataformas de carga se utilizan para carga, descarga y coordinación operativa.</p>
+          </div>
+        </article>
 
-                <article class="item-leyenda estacionamiento">
-                    <h3>Estacionamiento</h3>
-                    <p>Playas de aparcamiento para camiones.</p>
-                </article>
-            </div>
-        </section>
+        <article class="paso-mapa">
+          <span class="numero-paso">6</span>
+          <div>
+            <p class="etiqueta-paso">Operación</p>
+            <h3>Patio de maniobras</h3>
+            <p>Usá el patio de maniobras para circulación interna segura antes de entrar o salir de dársenas.</p>
+          </div>
+        </article>
 
-        <section class="contenedor seccion">
-            <h2>Referencia de sectores</h2>
-            <div class="referencia-sectores">
-                <article class="tarjeta">
-                    <h3>Circulación de camiones</h3>
-                    <p>Incluye el acceso principal, la salida a rutas principales y el patio de maniobras.</p>
-                </article>
+        <article class="paso-mapa">
+          <span class="numero-paso">7</span>
+          <div>
+            <p class="etiqueta-paso">Salida</p>
+            <h3>Salida a rutas principales</h3>
+            <p>Antes de salir, verificá recorrido, documentación y recomendación operativa.</p>
+          </div>
+        </article>
+      </div>
 
-                <article class="tarjeta">
-                    <h3>Operaciones de cargas</h3>
-                    <p>Incluye dársenas 1 a 5, plataformas o sectores de carga y sector logístico complementario.</p>
-                </article>
+      <div class="acciones-mapa">
+        <a class="boton" href="consulta.html">Consultar recorrido</a>
+        <a class="boton boton-secundario" href="servicios.html">Ver servicios</a>
+      </div>
+    </section>
 
-                <article class="tarjeta">
-                    <h3>Servicios para conductores</h3>
-                    <p>Incluye baños, duchas, oficinas de información, área de descanso y locales gastronómicos.</p>
-                </article>
-            </div>
-        </section>
-    </main>
+    <section class="contenedor seccion mapa-escritorio">
+      <h2>Mapa completo de referencia</h2>
+      <p>
+        El siguiente plano visual representa la distribución física de NexTransit,
+        donde los camiones ingresan, estacionan, descansan, cargan, descargan y
+        salen hacia rutas principales.
+      </p>
 
-    <footer class="pie">
-        <div class="contenedor">
-            <p>NexTransit - Actividad 3 | Diseño y Desarrollo WEB</p>
-        </div>
-    </footer>
+      <div class="contenedor-mapa">
+        <img class="imagen-mapa" src="img/mapa-central-nextransit.png" alt="Plano visual de NexTransit con acceso principal, salida a rutas, estacionamiento para camiones, dársenas, plataformas de carga, servicios, área de descanso y sector logístico complementario">
+      </div>
+    </section>
+
+    <section class="contenedor seccion leyenda-escritorio">
+      <h2>Leyenda del mapa</h2>
+      <div class="leyenda-mapa">
+        <article class="item-leyenda acceso">
+          <h3>Accesos</h3>
+          <p>Entradas, salidas y conexiones con rutas.</p>
+        </article>
+
+        <article class="item-leyenda servicios">
+          <h3>Servicios</h3>
+          <p>Baños, duchas, información y gastronomía.</p>
+        </article>
+
+        <article class="item-leyenda operacion">
+          <h3>Operación</h3>
+          <p>Dársenas, plataformas, logística y maniobras.</p>
+        </article>
+
+        <article class="item-leyenda descanso">
+          <h3>Descanso</h3>
+          <p>Áreas de pausa y espera para conductores.</p>
+        </article>
+
+        <article class="item-leyenda estacionamiento">
+          <h3>Estacionamiento</h3>
+          <p>Playas de aparcamiento para camiones.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contenedor seccion">
+      <h2>Referencia de sectores</h2>
+      <div class="referencia-sectores">
+        <article class="tarjeta">
+          <h3>Circulación de camiones</h3>
+          <p>Incluye el acceso principal, la salida a rutas principales y el patio de maniobras.</p>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Operación de cargas</h3>
+          <p>Incluye dársenas 1 a 5, plataformas o sectores de carga y sector logístico complementario.</p>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Servicios para conductores</h3>
+          <p>Incluye baños, duchas, oficina de información, área de descanso y locales gastronómicos.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p>NexTransit - Actividad 3 | Diseño y Desarrollo Web</p>
+    </div>
+  </footer>
 </body>
 </html>
