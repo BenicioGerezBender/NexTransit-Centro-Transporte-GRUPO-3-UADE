@@ -1,6 +1,14 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -16,7 +24,7 @@ img {
 }
 
 .contenedor {
-  width: 90%;
+  width: min(100% - 2rem, 1100px);
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -35,7 +43,7 @@ img {
 }
 
 .marca h1 {
-  font-size: 1.8rem;
+  font-size: clamp(1.8rem, 8vw, 2.2rem);
 }
 
 .marca p {
@@ -48,10 +56,12 @@ img {
   flex-direction: column;
   gap: 0.5rem;
   list-style: none;
+  width: 100%;
 }
 
 .navegacion a {
   display: block;
+  width: 100%;
   padding: 0.6rem 0.8rem;
   border: 1px solid #6fb3dc;
   border-radius: 0.4rem;
@@ -81,7 +91,7 @@ img {
   max-width: 42rem;
   margin-bottom: 1rem;
   color: #073b63;
-  font-size: 2rem;
+  font-size: clamp(1.7rem, 7vw, 2.4rem);
 }
 
 .hero p {
@@ -109,12 +119,14 @@ img {
 .seccion h2 {
   margin-bottom: 1rem;
   color: #073b63;
+  font-size: clamp(1.45rem, 6vw, 2rem);
 }
 
 .formulario {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  max-width: 100%;
   margin: 1.5rem 0;
   padding: 1rem;
   border: 1px solid #c8d9e4;
@@ -124,6 +136,8 @@ img {
 .formulario input,
 .formulario select,
 .formulario button {
+  width: 100%;
+  max-width: 100%;
   padding: 0.9rem;
   border: 1px solid #9eb8ca;
   border-radius: 0.35rem;
@@ -138,6 +152,8 @@ img {
 
 .resultado,
 .tarjeta {
+  max-width: 100%;
+  min-width: 0;
   padding: 1rem;
   border: 1px solid #c8d9e4;
   border-radius: 0.35rem;
@@ -154,6 +170,8 @@ img {
 }
 
 .viaje-asignado {
+  max-width: 100%;
+  min-width: 0;
   margin-top: 1rem;
   padding: 1rem;
   border: 1px solid #c8d9e4;
@@ -182,6 +200,8 @@ img {
 }
 
 .proximos-pasos {
+  max-width: 100%;
+  min-width: 0;
   margin-top: 1rem;
   padding: 1rem;
   border: 1px solid #c8d9e4;
@@ -210,6 +230,8 @@ img {
 }
 
 .contenedor-mapa-consulta {
+  max-width: 100%;
+  overflow: hidden;
   margin-top: 1.5rem;
   padding: 0.8rem;
   border: 1px solid #9eb8ca;
@@ -226,6 +248,8 @@ img {
 }
 
 .detalle-recorrido-mapa {
+  max-width: 100%;
+  min-width: 0;
   margin-top: 1rem;
   padding: 1rem;
   border: 1px solid #c8d9e4;
@@ -257,6 +281,8 @@ img {
 }
 
 .contenedor-mapa-operativo {
+  max-width: 100%;
+  overflow: hidden;
   margin-top: 1.5rem;
   padding: 0.8rem;
   border: 1px solid #9eb8ca;
@@ -294,10 +320,13 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  max-width: 100%;
   margin-top: 1.5rem;
 }
 
 .camion-card {
+  max-width: 100%;
+  min-width: 0;
   padding: 1rem;
   border: 1px solid #c8d9e4;
   border-left: 0.4rem solid #073b63;
@@ -440,6 +469,7 @@ img {
 
 .boton {
   display: inline-block;
+  max-width: 100%;
   margin-top: 1rem;
   padding: 0.85rem 1rem;
   border-radius: 0.35rem;
@@ -495,6 +525,8 @@ img {
 }
 
 .tarjeta-chofer {
+  max-width: 100%;
+  min-width: 0;
   padding: 1rem;
   border: 1px solid #c8d9e4;
   border-left: 0.4rem solid #073b63;
@@ -535,6 +567,8 @@ img {
 }
 
 .servicio-rapido {
+  max-width: 100%;
+  min-width: 0;
   padding: 1rem;
   border: 1px solid #c8d9e4;
   border-left: 0.4rem solid #1f6f9f;
@@ -560,6 +594,8 @@ img {
 }
 
 .tarjeta-condicion {
+  max-width: 100%;
+  min-width: 0;
   padding: 1rem;
   border: 1px solid #c8d9e4;
   border-left: 0.4rem solid #1f6f9f;
@@ -609,10 +645,15 @@ img {
 .paso-mapa {
   display: flex;
   gap: 1rem;
+  max-width: 100%;
   padding: 1.1rem;
   border: 1px solid #c8d9e4;
   border-radius: 0.45rem;
   background-color: #ffffff;
+}
+
+.paso-mapa div {
+  min-width: 0;
 }
 
 .numero-paso {
@@ -654,6 +695,7 @@ img {
 }
 
 .contenedor-mapa {
+  max-width: 100%;
   margin-top: 1.5rem;
   padding: 1rem;
   border: 1px solid #9eb8ca;
@@ -680,6 +722,8 @@ img {
 }
 
 .item-leyenda {
+  max-width: 100%;
+  min-width: 0;
   padding: 1rem;
   border: 1px solid #c8d9e4;
   background-color: #ffffff;
@@ -839,10 +883,18 @@ img {
 }
 
 @media (max-width: 767px) {
+  .barra-superior,
+  .navegacion,
+  .navegacion li {
+    width: 100%;
+  }
+
   .acciones-hero .boton,
   .formulario button,
   .acciones-resultado .boton {
+    display: block;
     width: 100%;
+    max-width: 100%;
     text-align: center;
   }
 
